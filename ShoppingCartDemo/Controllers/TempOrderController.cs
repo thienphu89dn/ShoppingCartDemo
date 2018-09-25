@@ -35,12 +35,11 @@ namespace ShoppingCartDemo.Controllers
             return View(tempOrderEntities);
         }
 
-        // GET: TempOrder/Create
-        public ActionResult Create()
+        [HttpPost]
+        public JsonResult Create(int PID)
         {
-            return View();
+            return Json("OK");
         }
-        
 
         // GET: TempOrder/Edit/5
         public ActionResult Edit(int? id)

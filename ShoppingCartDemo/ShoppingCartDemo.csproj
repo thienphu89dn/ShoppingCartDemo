@@ -165,30 +165,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809250704085_InitialCreate.cs" />
-    <Compile Include="Migrations\201809250704085_InitialCreate.Designer.cs">
-      <DependentUpon>201809250704085_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809250710532_InitialCreate1.cs" />
-    <Compile Include="Migrations\201809250710532_InitialCreate1.Designer.cs">
-      <DependentUpon>201809250710532_InitialCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809250722488_UpdateProduct.cs" />
-    <Compile Include="Migrations\201809250722488_UpdateProduct.Designer.cs">
-      <DependentUpon>201809250722488_UpdateProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809250739137_UpdateProduct1.cs" />
-    <Compile Include="Migrations\201809250739137_UpdateProduct1.Designer.cs">
-      <DependentUpon>201809250739137_UpdateProduct1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809250750448_UpdateProduct2.cs" />
-    <Compile Include="Migrations\201809250750448_UpdateProduct2.Designer.cs">
-      <DependentUpon>201809250750448_UpdateProduct2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809250803302_UpdateProduct3.cs" />
-    <Compile Include="Migrations\201809250803302_UpdateProduct3.Designer.cs">
-      <DependentUpon>201809250803302_UpdateProduct3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CustomerEntities.cs" />
     <Compile Include="Models\MasterModel.cs" />
@@ -214,6 +190,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\controller\tempOder.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -284,26 +261,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809250704085_InitialCreate.resx">
-      <DependentUpon>201809250704085_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809250710532_InitialCreate1.resx">
-      <DependentUpon>201809250710532_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809250722488_UpdateProduct.resx">
-      <DependentUpon>201809250722488_UpdateProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809250739137_UpdateProduct1.resx">
-      <DependentUpon>201809250739137_UpdateProduct1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809250750448_UpdateProduct2.resx">
-      <DependentUpon>201809250750448_UpdateProduct2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809250803302_UpdateProduct3.resx">
-      <DependentUpon>201809250803302_UpdateProduct3.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

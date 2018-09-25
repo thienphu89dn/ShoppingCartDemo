@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<ShoppingCartDemo.Models.ProductEntities>
-
+@Scripts.Render("~/Scripts/controller/tempOder.js")
 @{
     ViewBag.Title = "Index";
 }
@@ -27,29 +27,30 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Supplier)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.PID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.PID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.PID })
-        </td>
-        <th>
-            <a href="javascript:doSomething(@item.PID);" id="AddToCart"> Buy this item</a>
-        </th>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supplier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PID })
+            </td>
+            <th>
+                <a href="javascript:addToCart(@item.PID);" id="AddToCart"> Buy this item</a>
+            </th>
+        </tr>
+    }
 
 </table>

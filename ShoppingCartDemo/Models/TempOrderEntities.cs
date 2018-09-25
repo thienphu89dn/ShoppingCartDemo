@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace ShoppingCartDemo.Models
 {
+    [Table("TempOrder")]
     public class TempOrderEntities
     {
-    
+
         private int tempID;
-        private int oID;
-        private int amount;
-        private int price;
+        private List<ProductOrderEntities> listProduct;
 
         [Key]
         public int TempID { get => tempID; set => tempID = value; }
-        public int OID { get => oID; set => oID = value; }
-        public int Amount { get => amount; set => amount = value; }
-        public int Price { get => price; set => price = value; }
+        public List<ProductOrderEntities> ListProduct { get => listProduct; set => listProduct = value; }
     }
 }

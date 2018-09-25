@@ -1,18 +1,20 @@
-﻿$(document).ready(function () {
-   
-});
+﻿function addToCart(id) {
 
-function addToCart(id) {
+    var data = {
+        PID: id
+    };
+
     $.ajax({
         type: "POST",
+        contentType: "application/json; charset=utf-8",
         url: "/TempOrder/Create",
         dataType: "json",
-        data: { id: id },
+        data: JSON.stringify(data),
         success: function (data) {
-            console.log("Add successfully !!");
+            alert(data);
         },
         error: function (data) {
-            console.log("Add fail !!");
+            alert("Add fail !!");
         }
     });
 }

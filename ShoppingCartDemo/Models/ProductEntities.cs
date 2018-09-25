@@ -7,6 +7,7 @@ using System.Web;
 
 namespace ShoppingCartDemo.Models
 {
+    [Table("Product")]
     public class ProductEntities
     {
         

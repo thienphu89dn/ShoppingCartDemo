@@ -12,12 +12,18 @@ namespace ShoppingCartDemo.Models
     {
         
         private int oID;
-        private string pID;
+        private int pID;
         private int amount;
 
         [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int OID { get => oID; set => oID = value; }
-        public string PID { get => pID; set => pID = value; }
+
+        [Key]
+        [Column(Order = 2)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int PID { get => pID; set => pID = value; }
         public int Amount { get => amount; set => amount = value; }
     }
 }

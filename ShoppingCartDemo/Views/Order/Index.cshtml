@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ShoppingCartDemo.Models.OrderEntities>
+﻿@model IEnumerable<ShoppingCartDemo.Models.HistoryOrder>
 
 @{
     ViewBag.Title = "Index";
@@ -6,40 +6,30 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderDelivery)
-        </th>
-        <th></th>
-    </tr>
+<ul>
+    @foreach (var item in Model)
+    {
+    <li>
+        <p>
+            <b>Order No:</b>@item.OID<br />
+            <b>Customer No:</b>@item.CID<br />
+            <b>Order Data:</b>@item.OrderDate<br />
+            <b>Total Price:</b>@item.TotalPrice<br />
+        </p>
+        <p>
+            <ul>
+                @foreach (var i in item.listProduct)
+                {
+                <li>
+                    <b>Product No:</b>@i.PID<br />
+                    <b>Product Name:</b>@i.Name<br />
+                    <b>Price:</b>@i.Price<br />
+                    <b>Amount:</b>@i.Amount<br />
+                </li>
+                }
+            </ul>
+        </p>
+    </li>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderDelivery)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OID })
-        </td>
-    </tr>
-}
-
-</table>
+    }
+</ul>

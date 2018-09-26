@@ -165,8 +165,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809260304272_UpdateTable.cs" />
+    <Compile Include="Migrations\201809260304272_UpdateTable.Designer.cs">
+      <DependentUpon>201809260304272_UpdateTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CustomerEntities.cs" />
+    <Compile Include="Models\HistoryOrder.cs" />
+    <Compile Include="Models\HistoryProduct.cs" />
     <Compile Include="Models\MasterModel.cs" />
     <Compile Include="Models\OrderEntities.cs" />
     <Compile Include="Models\ProductEntities.cs" />
@@ -261,6 +267,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809260304272_UpdateTable.resx">
+      <DependentUpon>201809260304272_UpdateTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

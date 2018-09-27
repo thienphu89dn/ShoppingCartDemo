@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShoppingCartDemo;
 using ShoppingCartDemo.Controllers;
+using ShoppingCartDemo.Models;
 
 namespace ShoppingCartDemo.Tests.Controllers
 {
@@ -21,8 +22,9 @@ namespace ShoppingCartDemo.Tests.Controllers
             // Act
             ViewResult result = controller.Index() as ViewResult;
 
+            var actualList = result.Model;
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(actualList, typeof(List<ProductEntities>));
         }
 
         [TestMethod]

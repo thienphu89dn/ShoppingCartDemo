@@ -77,3 +77,12 @@ E:\ShoppingCartDemo\ShoppingCartDemo.Tests\obj\Debug\ShoppingCartDemo.Tests.pdb
 E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\EntityFramework.SqlServer.dll
 E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\EntityFramework.SqlServer.xml
 E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Castle.Core.dll
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Moq.dll
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\System.ValueTuple.dll
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Castle.Core.xml
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Moq.pdb
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\Moq.xml
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\ShoppingCartDemo\ShoppingCartDemo.Tests\bin\Debug\System.ValueTuple.xml

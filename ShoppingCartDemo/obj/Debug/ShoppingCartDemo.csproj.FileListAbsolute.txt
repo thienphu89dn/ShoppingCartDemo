@@ -291,3 +291,12 @@ E:\ShoppingCartDemo\ShoppingCartDemo\obj\Debug\ShoppingCartDemo.csproj.CopyCompl
 E:\ShoppingCartDemo\ShoppingCartDemo\obj\Debug\ShoppingCartDemo.Migrations.UpdateTable.resources
 E:\ShoppingCartDemo\ShoppingCartDemo\obj\Debug\ShoppingCartDemo.csproj.GenerateResource.cache
 E:\ShoppingCartDemo\ShoppingCartDemo\obj\Debug\ShoppingCartDemo.csprojAssemblyReference.cache
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\Castle.Core.dll
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\Moq.dll
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\System.Threading.Tasks.Extensions.dll
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\System.ValueTuple.dll
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\Castle.Core.xml
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\Moq.pdb
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\Moq.xml
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\System.Threading.Tasks.Extensions.xml
+E:\ShoppingCartDemo\ShoppingCartDemo\bin\System.ValueTuple.xml

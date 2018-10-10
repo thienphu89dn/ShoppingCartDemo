@@ -121,8 +121,8 @@ E:\ShoppingCartDemo\ApiDemo\bin\Microsoft.AI.DependencyCollector.xml
 E:\ShoppingCartDemo\ApiDemo\bin\Microsoft.AI.WindowsServer.xml
 E:\ShoppingCartDemo\ApiDemo\bin\Microsoft.AI.Web.xml
 E:\ShoppingCartDemo\ApiDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.csprojAssemblyReference.cache
 E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.csproj.CoreCompileInputs.cache
 E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.csproj.CopyComplete
 E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.dll
 E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.pdb
+E:\ShoppingCartDemo\ApiDemo\obj\Debug\ApiDemo.csprojAssemblyReference.cache

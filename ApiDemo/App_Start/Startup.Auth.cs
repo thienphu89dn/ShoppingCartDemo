@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using ApiDemo.Providers;
 using ApiDemo.Models;
+using ApiDemo.Helper_Code.OAuth2;
 
 namespace ApiDemo
 {
@@ -41,7 +42,7 @@ namespace ApiDemo
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,  
                 LoginPath = new PathString("/Account/Login"),  
                 LogoutPath = new PathString("/Account/LogOff"),  
-                ExpireTimeSpan = TimeSpan.FromMinutes(5.0),  
+                ExpireTimeSpan = TimeSpan.FromMinutes(5.0),
             }); 
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
@@ -50,8 +51,8 @@ namespace ApiDemo
             OAuthOptions = new OAuthAuthorizationServerOptions
             {
                 TokenEndpointPath = new PathString("/Token"),
-                Provider = new ApplicationOAuthProvider(PublicClientId),
-                AuthorizeEndpointPath = new PathString("/Account/ExternalLogin"),
+                Provider = new AppOAuthProvider(PublicClientId),
+                AuthorizeEndpointPath = new PathString("/Account/IExternalLogin"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromHours(4),
                 AllowInsecureHttp = true //Don't do this in production ONLY FOR DEVELOPING: ALLOW INSECURE HTTP!  
             };
